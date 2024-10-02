@@ -1,3 +1,4 @@
+console.log("Hello World!");
 function hello(){
     alert("Hello World!");
 }
@@ -5,7 +6,7 @@ function hello(){
 let counter = 0;
 
 function compter(){
-    const valeurCompter = document.querySelector("emp");
+    let valeurCompter = document.querySelector("emp");
     counter++;
     valeurCompter.innerHTML = counter;
     // mettre une condition avec modulo pour afficher sur un alerte pour un multible
@@ -33,3 +34,22 @@ function conditionAfficher(){
         heading.innerHTML = "Hello!";
     }
 }
+////////// Exécuter les fonction ici ////////////////////////
+// Une autre manière d'exuter un fonction sans utiliser le DOM du HTML est d'appeler le Id du tag que nous voulons affectter la fonction
+
+/*document.addEventListener("DOMContentLoaded", function (){
+    document.getElementById("btnCompter").onclick = compter;
+});
+document.addEventListener("DOMContentLoaded", function (){
+    document.getElementById("btnHello").onclick = conditionAfficher;
+});*/
+
+///////////////////////////////////////////////////// trier à l'envers la chaine à l'envers/////////////////////////////
+let monPremierTableau = [1,2,3,4,5,6,7,8,9,10];
+let pope = monPremierTableau.sort((a, b) => a - b);
+
+
+console.log(pope);
+console.log(`j'ai mangé ${4+ 5} pomme rouge
+`)
+
